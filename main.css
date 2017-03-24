@@ -354,6 +354,23 @@ a {
     to {opacity: 1.0;}
 }
 
+/* 404 page */
+#fourohfour{
+    font-size: 200px;
+    margin: 20px;
+    text-align: center;
+    color: #048;
+    padding: 0px;
+}
+#fourohfour-text{
+    text-align: center;
+}
+@media screen and (max-width: 500px){
+    #fourohfour {
+        font-size: 100px;
+    }
+}
+
 /* FONT */
 /*<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ubuntu' />*/
 /* cyrillic-ext */
