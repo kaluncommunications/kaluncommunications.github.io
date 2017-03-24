@@ -1,0 +1,406 @@
+body {
+	font-family:calibri, arial, sans-serif;
+}
+#main {
+	margin: 45px auto 27px auto;
+	max-width: 940px;
+}
+@media screen and (max-width: 500px){
+    #main {
+        margin: 25px auto;
+    }
+}
+h1 {
+	font-family: ubuntu, helvetica, calibri, arial, sans-serif;
+	font-size: 24px;
+    padding: 8px 0px 13px 45px;
+}
+h2{
+	font-family: ubuntu, helvetica, calibri, arial, sans-serif;    
+    font-size: 20px;
+    margin: 20px 0px 5px 0px;
+}
+h3{
+	font-size: 19.5px;   
+    margin: 10px 0px 3px 0px; 
+}
+h4{
+    font-size: 18px;
+    font-weight: bold !important;
+    margin: 8px 0px 3px 0px;
+}
+@media screen and (max-width: 800px){
+    h1 {
+        padding-left: 0px;
+        font-size: 21px;
+        text-align: center;
+    }
+    h2{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 18px;
+    } 
+    h4{
+        font-size: 17px;
+    }
+}
+ol{
+    margin: 0px;
+}
+ol > li {
+   font-weight: bold;
+}
+ol > li > *{
+    font-weight: normal;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 30px;
+}
+ul > li:before{ 
+    content: "•"; 
+    font-size: 13px; 
+    padding-right: 8px;
+}
+ul > li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+p {
+	margin: 8px 0px 5px 0px;
+}
+a {
+    text-decoration-line: none;
+    color: #107BED;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.click{
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.group{
+    display: inline-block
+}
+.clearfix:after { /* use to clear below the floating elements */
+  content: "";
+  display: table;
+  clear: both;
+  /*float: none;*/
+}
+
+/* HEADER */
+#header {
+	height: 150px;
+}
+#logo {
+	float: left;
+	height: 150px;
+	width: 356px;
+	background-image: url('media/KalunLogo.gif');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: scroll;
+    background-size: contain;
+}
+#nav {
+	float:left;
+	height:150px;
+	font-size:20px;
+	font-weight:bold;
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.nav-button {
+    display: inline-block;
+	margin-top: 76px;
+	height: 37px;
+    padding: 0px 25px;
+	text-align: center;
+	border-bottom: 2px solid #555;  
+}
+.nav-button:first-child{
+    padding-left: 40px;
+}
+.nav-button:last-child{
+    padding-right: 40px;
+}
+.nav-button{
+	text-decoration: none;
+	color: #555;
+}
+.nav-button:hover {
+	color: #107BED;
+	border-bottom: 2px solid #107BED;
+}
+.nav-button:active{
+	color: #107BED;
+	border-bottom: 2px solid #107BED;  
+}
+.selected-nav{
+	color: #107BED;
+	border-bottom: 2px solid #107BED;      
+}
+.selected-nav:hover {
+	color: #107BED;
+	border-bottom: 2px solid #107BED;
+}
+@media screen and (max-width: 970px) and (min-width: 910px){
+    .nav-button {
+        padding: 0px 20px;
+    }
+    .nav-button:first-child{
+        padding-left: 32px;
+    }
+    .nav-button:last-child{
+        padding-right: 32px;
+    }
+}
+@media screen and (max-width: 910px) and (min-width: 850px){
+    .nav-button {
+        padding: 0px 15px;
+    }
+    .nav-button:first-child{
+        padding-left: 24px;
+    }
+    .nav-button:last-child{
+        padding-right: 24px;
+    }
+}
+@media screen and (max-width: 850px) and (min-width: 800px){
+    .nav-button {
+        padding: 0px 10px;
+    }
+    .nav-button:first-child{
+        padding-left: 16px;
+    }
+    .nav-button:last-child{
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 800px){
+    #header {
+        height:auto;
+    }
+    #nav {
+        float: none;
+        height: auto;
+        margin: auto;
+        width: auto;
+        text-align: center;
+    }
+    #logo {
+        float:none;
+        height:150px;
+        width: 100%;
+    }
+    .nav-button {
+        margin-top: 10px;
+        padding: 0px 3%;
+    }
+    .nav-button:first-child{
+        padding-left: 5%;
+    }
+    .nav-button:last-child{
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 500px){
+    .nav-button {
+        display: block;
+    }
+    .nav-button:first-child{
+        border-top: 2px solid #555;  
+        padding-top: 8px;
+    }
+    
+}
+
+/* BLUE-GREY BAR */
+.bar {
+	height:15px;
+	width:100%;
+}
+.bar-left {
+	float: left;
+	height: 15px;
+	width: 38%;
+	background-color: #048;
+}
+.bar-right {
+	float: left;
+	height: 15px;
+	width: 62%;
+	background-color: #555;
+}
+
+/* PAGE CONTENT */
+#content{
+    margin: 0px 45px 49px 45px;
+    /*min-height: 300px;*/
+}
+
+/* HOME PAGE */
+.homecontent-text {
+    float: left;
+    margin: 30px 1% 30px 2%;
+}
+.homecontent-text p {
+	margin: 10px;
+	font-size:16px;
+}
+.homecontent-text-left{
+    margin-left: 3%;
+    margin-right: 6%;
+    width: 53%; /*62*/
+}
+.homecontent-text-right{
+    width: 33%; /*38*/
+    color: #048;
+}
+@media screen and (max-width: 630px){
+    .homecontent-text {
+        float: none;
+    }
+    .homecontent-text-left{
+        margin-top: 30px;
+        width: 88%;
+    }
+    .homecontent-text-right{
+        width: 88%;
+        margin-bottom: 30px;
+    }
+    .homecontent-text>p.bold{
+        font-size: 17px;
+        margin-top: 25px;
+    }
+}
+
+/* SLIDER */
+#homecontent-slider {
+	height: 380px;
+    width: 100%;
+	max-width: 940px;
+	background-color: #555;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.slider-picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+    /*max-height: 100%; no flicker on chrome desktop */
+}
+#slider-playbutton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.play-button{
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-left: 17px solid rgba(150,150,150,0.5);    
+    border-bottom: 12px solid transparent;
+}
+.play-button:hover{
+    border-top: 12px solid transparent;
+    border-left: 17px solid rgba(185,185,185,0.6);
+    border-bottom: 12px solid transparent;
+}
+.pause-button{
+    width: 5px; 
+    height: 22px; 
+    background-color: transparent;
+    border-left: 7px solid rgba(150,150,150,0.5);    
+    border-right: 7px solid rgba(150,150,150,0.5);    
+}
+.pause-button:hover{
+    border-left: 7px solid rgba(185,185,185,0.6);    
+    border-right: 7px solid rgba(185,185,185,0.6);  
+    
+}
+@media screen and (max-width: 500px){
+    #homecontent-slider {
+        height: 200px;
+    }
+}
+@keyframes fadeout {
+    from   {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+@keyframes fadein {
+    from   {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
+/* FONT */
+/*<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ubuntu' />*/
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(media/ubuntu_v9_font/ODszJI8YqNw8V2xPulzjO_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(media/ubuntu_v9_font/iQ9VJx1UMASKNiGywyyCXvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(media/ubuntu_v9_font/WkvQmvwsfw_KKeau9SlQ2_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(media/ubuntu_v9_font/gYAtqXUikkQjyJA1SnpDLvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(media/ubuntu_v9_font/Wu5Iuha-XnKDBvqRwQzAG_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(media/ubuntu_v9_font/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
