@@ -1,2 +1,1 @@
-# kaluncommunications.github.io
-Kalun Communications Website
+# Kalun Communications Website
