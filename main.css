@@ -68,6 +68,14 @@ ul > li{
     padding-left: 1em;
     text-indent: -1em;
 }
+@media screen and (max-width: 630px){
+    ol{
+        padding-left: 20px;
+    }
+    ul {
+        padding-left: 10px;
+    }
+}
 p {
 	margin: 8px 0px 5px 0px;
 }
@@ -248,6 +256,11 @@ a {
     margin: 0px 45px 49px 45px;
     /*min-height: 300px;*/
 }
+@media screen and (max-width: 630px){
+    #content{
+        margin: 0px 10px 49px 10px;
+    }
+}
 
 /* HOME PAGE */
 .homecontent-text {
@@ -270,14 +283,15 @@ a {
 @media screen and (max-width: 630px){
     .homecontent-text {
         float: none;
+        margin: 30px 0;
     }
     .homecontent-text-left{
-        margin-top: 30px;
-        width: 88%;
+        margin: 30px 0;
+        width: 100%;
     }
     .homecontent-text-right{
-        width: 88%;
-        margin-bottom: 30px;
+        margin: 30px 0;
+        width: 100%;
     }
     .homecontent-text>p.bold{
         font-size: 17px;
